@@ -11,6 +11,8 @@
 <body>
     <div id="app">
         <p>{{ message1 }} {{ message2 }}</p>
+        <p>{{ message3 }}</p>
+        
     </div>
 
     <script>
@@ -19,7 +21,7 @@
             data: {
                 message1: 'Hello Vue.js1!',
                 message2: 'Hello Vue.js2!',
-                message2: 'Hello Vue.js3!'                
+                message3: 'Hello Vue.js3!' + " " + new Date().toDateString()               
             }
         })
     </script>
